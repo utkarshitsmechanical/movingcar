@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        border-left:10px solid orange;
+        border-top:10px solid white;
+        border-right:10px solid green;
+    }
+    .class1{
+        height:100vh;
+        width:100%;
+        background-image:url("sky.jpg");
+        background-size:cover;
+        background-position:center;
+        position:relative;
+        overflow-x:hidden;
+    }
+    .class3{
+        height:200px;
+        width:500%;
+        display:block;
+        background-image: url("road.jpg");
+        position:absolute;
+        bottom:0;
+        left:0;
+        right:0px;
+        z-index:1;
+        background-repeat: repeat-x;
+        animation: highway 5s linear infinite;
+    }
+    @keyframes highway{
+        100% {transform:translateX(-1500px)};
+    }
+    .class5{
+        height:250px;
+        width:500%;
+        background-image: url("city.png");
+        position:absolute;
+        bottom:200px;
+        left:0px;
+        right:0px;
+        z-index:1;
+        background-repeat: repeat-x;
+        animation: city 20s linear infinite;
+    }
+    @keyframes city{
+        100% {transform:translateX(-1000px)};
+    }
+    .class6{
+        width:400px;
+        left:50%;
+        bottom:100px;
+        transform:translateX(-50%);
+        position:absolute;
+        z-index:2;
+    }
+    .class6 img{
+        width:100%;
+        animation:car 1s linear infinite;
+    }
+    @keyframes car{
+        100% {transform:translateY(-1px)};
+        50% {transform:translateY(-1px)};
+        0% {transform:translateY(-1px)};
+    }
+    .wheel{
+        left:50%;
+        bottom:178px;
+        transform:translateX(-50%);
+        position:absolute;
+        z-index:2;
+
+    }
+    .wheel img{
+        width:72px;
+        height:72px;
+        animation:wheel 1s linear infinite;
+    }
+    @keyframes wheel{
+        100% {
+            transform:rotate(360deg);
+        }
+    }
+
+    .wheel1{
+        left:-165px;
+        position:absolute;
+
+    }
+    .wheel2{
+        left:80px;
+        position:absolute;
+    }
+    h1{
+        text-align:center;
+    }
+    .class4{
+        position:absolute;
+        right:0px;
+        animation-name: sunn;
+        animation-duration: 100s;
+        animation-iteration-count:infinite;
+        animation-timing-function: linear;
+
+    }
+    @keyframes sunn{
+        100% {transform:translateX(-1000%)};
+    }
+    .class2{
+        text-align:center;
+        font-size:50px;
+
+    }
+    #div1{
+        background-color: orange;
+    }
+    #div2{
+        background-color:white;
+    }
+    #div3{
+        background-color: green;
+    }
+    .flag{
+        height:20vh;
+        width:20%;
+        position:absolute;
+        bottom:170px;
+        left:700px;
+        z-index:3;
+        
+    }
+   
+  
+</style>
+<body>
+    <div class="class1">
+        <div class="class2">
+        <span id="div1">HAPPY</span>
+        <span id="div2">INDEPENDENCE</span>
+        <SPAN id="div3">DAY</SPAN>
+        </div>
+        <div class="class3">
+        </div>
+        <div class="class4">
+            <img src="http://www.clker.com/cliparts/s/V/i/H/5/0/a-sun-cartoon-with-a-long-ray-th.png">
+        </div>
+
+        <div class="class5">
+
+        </div>
+        <div class="class6">
+            <img src="car.png">
+        </div>
+        <div class="wheel">
+            <img src="wheel.png" class="wheel1">
+            <img src="wheel.png" class="wheel2">
+
+        </div>
+        <div class="flag">
+            <img src="http://www.clker.com/cliparts/8/I/S/K/J/S/indian-flag-th.png">
+        </div>
+    </div>
+    
+</body>
+</html>
